@@ -6,14 +6,17 @@
         <link rel="icon" href="static/img/icon/profile.ico">
         <link rel="stylesheet" href="static/css/index.css">
         <link rel="stylesheet" href="static/css/root.css">
+        <link rel="stylesheet" href="static/css/bar.css">
         <link rel="stylesheet" href="static/css/home.css">
         <link rel="stylesheet" href="static/css/about.css">
         <script src="static/js/import.js"></script>
         <script src="static/js/root.js"></script>
-        <title>J3lyF1shhhhhh - Tony Wang</title>
+        <script src="static/js/TOC_bar.js"></script>
+        <title>J3lyF1shhhhhh's BLOG</title>
     </head>
 
-    <body onscroll="scroll_change()">
+    <body onscroll="scroll_change()" onresize="update_sticky_top()">
+        <ih id="bar" style="--trans: 0"></ih>
         <img class="title-img" src="static/img/src/profile.png">
         <ih class="content" id="home"></ih>
         <ih class="content" id="about"></ih>
@@ -21,6 +24,5 @@
     <script>
         includeHTML();
         index_onload();
-        scroll_change();
     </script>
 </html>

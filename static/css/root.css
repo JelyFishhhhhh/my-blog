@@ -2,7 +2,7 @@
     width: 100%;
     min-height: 50%;
     overflow: hidden;
-    top: 8px;
+    top: 70px;
     position: sticky;
     filter: blur(var(--blur));
 }
@@ -20,4 +20,5 @@
 
 ::-webkit-scrollbar {
     width: 0px;
+    height: 0px;
 }
