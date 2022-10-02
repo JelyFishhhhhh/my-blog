@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+
+#line {
+    border-top: 2.15px solid white;
+}
+
+#mission {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(72, 72, 72, 0.5);
+}
+
+#mission .mission-title {
+    color: rgb(255, 255, 255);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 48px;
+    width: 70%;
+    margin: 16px;
+    margin-bottom: 12px;
+    padding-left: 0px;
+    padding-right: 20%;
+}
+#mission .mission-subtitle {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 32px;
+    color: rgb(210, 210, 210);
+    font-style: italic;
+    text-align: right;
+    letter-spacing: 8px;
+    padding-left: 50%;
+    padding-right: 0px;
+    margin-bottom: 48px;
+}
+
+#mission .mission-content {
+    color: rgb(255, 255, 255);
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 24px;
+    width: 50%;
+    padding-left: 4%;
+    padding-right: 3%;
+    margin: 16px;
+    text-align: justify;
+    white-space: normal;
+}
+
+#mission .mission-tags {
+    color: rgb(255, 255, 255);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 21.5px;
+    text-align: justify;
+    padding-left: 35%;
+    padding-right: 0%;
+}
+
+#mission .mission-completed-block{
+    display: flex;
+    width: 1200px;
+    height: 300px;
+    margin: 16px;
+    padding: 24px;
+    padding-left: 40px;
+    background-color: rgb(77, 77, 77);
+    box-shadow: 0px 0px 15px 2px rgb(0, 0, 0);
+    gap: 32px;
+    border-radius: 10px;
+}
+
+#mission .mission-completed-block div.mission-completed-title {
+    color: rgb(255, 255, 255);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 35px;
+    text-align: justify;
+}
+
+#mission .mission-completed-block div.mission-completed-content {
+    color: rgb(180, 180, 180);
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 15px;
+    padding-left: 35px;
+    text-align: right;
+    text-indent: 35px;
+    text-decoration: none;
+}
