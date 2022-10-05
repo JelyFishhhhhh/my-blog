@@ -41,10 +41,10 @@ function update_sticky_top() {
 function scroll_change() {
     let scroll_position = window.scrollY;
 
-    if (scroll_position <= document.querySelector("body > img").height + 64) {document.querySelector("#top-bar").style.setProperty("--trans", 1);}
+    if (scroll_position <= document.querySelector("body > img").height + 64) {document.querySelector("#bar").style.setProperty("--trans", 1);}
     else {document.querySelector("#bar").style.setProperty("--trans", 0);}
     let img_blur = 10 * window.scrollY / (document.querySelector("body > img").height + 64);
-    document.querySelector("img.title-img").style.setProperty("--blur", `${img_blur}px`)
+    document.querySelector("img.main-img").style.setProperty("--blur", `${img_blur}px`)
 
     let page_list = document.querySelectorAll(".content");
     let start_position = window.innerHeight * 0.9;
