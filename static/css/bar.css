@@ -9,7 +9,7 @@
     margin: 0;
     height: 48px;
     width: calc(100% - 24px);
-    background-color: rgb(40, 40, 40);
+    background-color: #0abab5;
     box-shadow: 0px 1px 10px 1px rgb(0, 0, 0, 0.5);
     color: rgb(255, 255, 255);
     z-index: 2;
@@ -28,6 +28,7 @@
 
 #bar .bar-title {
     font-family: 'Permanent Marker', cursive;
+    color: #FFFFFF;
     margin-left: 20px;
     font-size: 1.5em;
     cursor: pointer;
@@ -47,7 +48,7 @@
     height: 40px;
     font-size: 18px;
     background-color: transparent;
-    color: rgb(144, 144, 144);
+    color:#000000;
     cursor: pointer;
     margin: 4px;
     justify-self: end;
