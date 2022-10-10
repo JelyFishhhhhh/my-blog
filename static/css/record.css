@@ -1,0 +1,102 @@
+#record {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(31, 31, 31, 0.5);
+    padding-bottom: 180px;
+}
+
+#record .record-title{
+    margin: 24px;
+    margin-bottom: 4px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 36px;
+}
+
+#record .record-out-block {
+    width: 65%;
+    height: 80%;
+    margin: 16px;
+    position: relative;
+    overflow-x: hidden;
+}
+#record .record-out-block::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -20px;
+    width: 20px;
+    height: 100%;
+    box-shadow: 10px 0px 8px -8px rgb(0, 0, 0);
+}
+#record .record-out-block::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: -20px;
+    width: 20px;
+    height: 100%;
+    box-shadow: -10px 0px 8px -8px rgb(0, 0, 0);
+}
+
+#record .record-block {
+    display: flex;
+    width: 1000px;
+    height: 350px;
+    margin: 0px;
+    padding: 0px 16px;
+    overflow-x: scroll;
+    gap: 16px;
+}
+
+#record .event-block {
+    height: calc(100% - 32px);
+    margin: 16px 0px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(77, 77, 77);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 2px rgb(0, 0, 0);
+}
+#record .event-block .event-title {
+    font-size: 35px;
+    text-indent: 36px;
+    letter-spacing: 1px;
+}
+
+#record .event-block .event-content {
+    flex: 1;
+    height: calc(100% - 32px);
+    margin: 16px 24px;
+    color: rgb(255, 255, 255);
+}
+#record .event-block .event-content:nth-child(1){
+    width: 400px;
+}
+#record .event-block .event-subcontent {
+    flex: 0;
+}
+
+#record .event-block .event-hr {
+    width: 0px;
+    height: calc(100% - 32px);
+    margin: 0px;
+    border-style: solid;
+    border-color: rgb(210, 210, 210, 0.7);
+    border-width: 1px;
+}
+
+#record .event-block .event-text {
+    font-size: 18px;
+    text-indent: 36px;
+    letter-spacing: 1px;
+}
+
+#record .event-block img {
+    flex: 1;
+    width: 350px;
+    height: auto;
+    margin: 0px auto 0px auto;
+    border-radius: 10px;
+}

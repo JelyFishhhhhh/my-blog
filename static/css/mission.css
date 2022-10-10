@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@900&display=swap');
 
 #mission {
     display: flex;
@@ -9,7 +11,7 @@
 }
 
 #mission .mission-title {
-    color: rgb(255, 255, 255);
+    color: rgb(210, 210, 210);
     font-family: 'Permanent Marker', cursive;
     font-size: 48px;
     width: 70%;
@@ -19,7 +21,7 @@
     padding-right: 20%;
 }
 #mission .mission-subtitle {
-    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Noto Serif TC', serif;
     font-size: 32px;
     color: rgb(210, 210, 210);
     font-style: italic;
