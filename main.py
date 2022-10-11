@@ -6,7 +6,7 @@ app = Flask(__name__, template_folder='templates')
 
 @app.route('/', methods=['GET', 'POST'])
 def origin():
-    return render_template('root.html')
+    return render_template('index.html')
 
 @app.route('/templates/<filename>', methods=['GET', 'POST'])
 def template(filename):
