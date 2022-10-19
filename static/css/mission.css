@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@900&display=swap');
-
 #mission {
     display: flex;
     flex-direction: column;
@@ -14,12 +13,21 @@
     color: rgb(210, 210, 210);
     font-family: 'Permanent Marker', cursive;
     font-size: 48px;
-    width: 70%;
+    width: 60%;
     margin: 16px;
     margin-bottom: 12px;
     padding-left: 0px;
     padding-right: 20%;
+    /* animation: 
+        typing 3.5s steps(35, end),
+        blink-caret .10s step-end infinite; */
 }
+
+/* @keyframes typing {
+    from { width: 45% }
+    to { width: 60% }
+} */
+
 #mission .mission-subtitle {
     font-family: 'Noto Serif TC', serif;
     font-size: 32px;
@@ -30,6 +38,9 @@
     padding-left: 50%;
     padding-right: 0px;
     margin-bottom: 48px;
+    /* animation:
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite; */
 }
 
 #mission .mission-content {

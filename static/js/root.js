@@ -1,3 +1,19 @@
+var type_inx=0;
+var slogan="Talk is cheap. Show the code.";
+var speed = 70;
+var type_mode=false;
+
+function typer(){
+    if (document.getElementById('type').innerHTML.length < slogan.length){
+        document.getElementById('type').innerHTML += slogan.charAt(type_inx)
+        type_inx++;
+        loopTimer = setTimeout('frameLooper()',speed);
+    }
+    else{
+        type_mode=true;
+    }
+}
+
 function index_onload(s_1=true) {
     let test_list;
     let element_list = document.querySelectorAll(".content");
@@ -73,5 +89,12 @@ function scroll_change() {
                 element.style.setProperty("--blur", `0px`);
             }
         }
+        if (element.id=="mission"&&!type_mode){
+            type_mode=true;
+            document.getElementById('type').innerHTML="";
+            type_inx=0;
+            typer();
+        }
+
     })
 }
