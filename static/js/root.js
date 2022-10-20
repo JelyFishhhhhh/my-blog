@@ -11,6 +11,8 @@ function typer(){
     }
     else{
         type_mode=true;
+        // document.getElementById('type').innerHTML="";
+        // type_inx=0;
     }
 }
 
@@ -40,6 +42,7 @@ function index_onload(s_1=true) {
             if (element.matches(':hover')) {
                 event.preventDefault();
                 element.scrollLeft += event.deltaY;
+                // typer();
             }
             
         })
@@ -62,6 +65,10 @@ function scroll_change() {
     else {document.querySelector("#bar").style.setProperty("--trans", 0);}
     let img_blur = 10 * window.scrollY / (document.querySelector("body > img").height + 64);
     document.querySelector("img.main-img").style.setProperty("--blur", `${img_blur}px`)
+    if(!type_mode){
+        document.getElementById('type').innerHTML="";
+        typer();
+    }
 
     let page_list = document.querySelectorAll(".content");
     let start_position = window.innerHeight * 0.9;
