@@ -11,8 +11,19 @@
     
 }
 
-#paragraph .paragraph-title {
+#paragraph .paragraph-title-ch {
     font-family: 'Noto Serif TC', serif;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 70px;
+    text-shadow: 3px;
+    width: 60%;
+    margin: 16px;
+    padding-left: 0px;
+    padding-right: 20%;
+}
+
+#paragraph .paragraph-title-eng {
+    font-family: 'Permanent Marker', cursive;
     color: rgba(255, 255, 255, 0.5);
     font-size: 70px;
     text-shadow: 3px;
