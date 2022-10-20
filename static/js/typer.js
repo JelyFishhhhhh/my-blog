@@ -8,4 +8,10 @@ function typer(){
     setTimeout(typer, speed);
 }
 
-typer();
+// typer();
+
+for (let i = 0; i < page_list.length; i++) {
+    if (page_list[i].id == "type") {
+        typer();
+    }
+}

@@ -4,7 +4,7 @@ var speed = 70;
 var type_mode=false;
 
 function typer(){
-    if (document.getElementById('type').innerHTML.length < slogan.length){
+    if (document.getElementById('type').innerHTML.length < slogan.length&&!type_mode){
         document.getElementById('type').innerHTML += slogan.charAt(type_inx)
         type_inx++;
         loopTimer = setTimeout('frameLooper()',speed);
@@ -41,6 +41,7 @@ function index_onload(s_1=true) {
                 event.preventDefault();
                 element.scrollLeft += event.deltaY;
             }
+            
         })
     });
 }
